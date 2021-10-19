@@ -2,3 +2,8 @@
     border: 0px;
     padding: 0px;
 }
+
+textarea {
+    margin: 10px 0px;
+}
+
