@@ -1,12 +1,7 @@
-.img-thumbnail {
-    border: 0px;
-    padding: 0px;
-}
-
-textarea {
-    margin: 10px 0px;
-}
-
 body {
-    padding-top: 70px;
+    padding-top: 120px;
+}
+
+.card {
+    max-width: 800px;
 }

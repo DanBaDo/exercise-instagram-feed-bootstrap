@@ -11,16 +11,13 @@
 </head>
 <body>
 
-  <!-- Inicio main -->
-
   <div class="container">
-
     <!-- Navbar -->
     <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container flex-column align-items-stretch">
         <div class="navbar-nav justify-content-between">
-          <a class="navbar-brand" href="#">
-            <img src="./static/logo.png" class="img-thumbnail" alt="Instagram logo">
+          <a class="navbar-brand w-25" href="#">
+            <img src="./instagram.png" class="img-thumbnail border-0 bg-transparent" alt="Instagram logo">
           </a>
           <div class="navbar-nav">
             <ul class="navbar-nav mb-2 mb-lg-0 container-fluid justify-content-end">
@@ -46,19 +43,21 @@
         <div class="navbar-nav">
           <!-- Pill -->
           <ul class="nav nav-pills container-fluid justify-content-center" >
-            <li class="nav-item" role="presentation">
-              <a id="pills-A-tab" class="nav-link active" aria-current="page" href="#" data-bs-toggle="pill" data-bs-target="#pillA" type="button" role="tab" aria-controls="pillA" aria-selected="true">A</a>
-            </li>
-            <li class="nav-item">
-              <a id="pills-B-tab" class="nav-link" href="#" data-bs-toggle="pill" data-bs-target="#pillB" type="button" role="tab" aria-controls="pillB" aria-selected="false">B</a>
-            </li>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button id="pills-A-tab" class="nav-link active" data-bs-toggle="pill" data-bs-target="#pillA" type="button"><i class="bi bi-grid-3x2-gap-fill"></i></button>
+              </li>
+              <li class="nav-item">
+                <button id="pills-B-tab" class="nav-link" data-bs-toggle="pill" data-bs-target="#pillB" type="button"><i class="bi bi-square-fill"></i></button>
+              </li>
+            </ul>
           </ul>
           <!-- End pill-->
         </div>
       </div>
     </nav>
-    <!-- Fin Navbar -->
-
+    <!-- End navbar -->
+    <!-- Contents-->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="pillA" role="tabpanel" aria-labelledby="pills-A-tab">
         <div class="d-flex justify-content-center flex-wrap pt-5">
@@ -88,63 +87,81 @@
           <img  class="flex-fill m-1" src="https://picsum.photos/300/200?random=24" alt="">
         </div>
       </div>
-      <div class="tab-pane fade" id="pillB" role="tabpanel" aria-labelledby="pills-B-tab">
-        <div class="row"> 
-
-          <div class="col-md-3"></div> <!-- Columna derecha -->
-    
-          <div class="col-md-6">
-            <div class="row">
-              <div class="card" style="width: 18rem;">
-                <img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-              <img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-              <img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-    
-            <div class="card" style="width: 18rem;">
-              <img src="https://picsum.photos/300/200?random=4" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+      <div class="tab-pane fade d-flex flex-column align-items-center" id="pillB" role="tabpanel" aria-labelledby="pills-B-tab">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=25" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card-footer bg-white d-flex align-items-center">
+              <i class="bi bi-heart me-2"></i>
+              <button type="button" class="btn bg-white border-0 text-secondary">Comment...</button>
+              <i class="bi bi-three-dots-vertical ms-auto"></i>
             </div>
           </div>
-        
-          <div class="col-md-3"></div> <!-- Columna izquierda -->
-      
         </div>
-      </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=26" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=27" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=28" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card-footer text-muted">
+              Comment...
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=29" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=30" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <img src="https://picsum.photos/900/600?random=31" class="mb-3 w-100" alt="...">
+            <h5 class="card-subtitle">33 likes</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      <!-- End contents-->
     </div>
-
   </div>
 
-  <!-- Fin main -->
-
   <!-- Modals -->
-
   <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -164,6 +181,7 @@
       </div>
     </div>
   </div>
+  <!-- End modals -->
 
 
 
