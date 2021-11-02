@@ -6,4 +6,6 @@ He necesitado aplicar dos estilos:
 * Para fijar el nav en la parte superior de la página, según se indica en la documentación de Bootstrap: https://getbootstrap.com/docs/5.1/components/navbar/#placement
 * Para limitar el ancho de las tarjetas, no habiendo encontrando en Bootstrap una alternativa al max-width.
 
-Adicionalmente he intentado maquetar la totalidad del ejercicion empleando flex, pues parece ser una tendencia en las últimas versiones de Bootstrap y, además, me resulta más natural.
+~~Adicionalmente he intentado maquetar la totalidad del ejercicion empleando flex, pues parece ser una tendencia en las últimas versiones de Bootstrap y, además, me resulta más natural.~~
+
+Finalmente la adecuada convinación de .container, .row y .column parece ofrecer los mejores resultados a la hora de maquetar los contenidos con bootstrap.
